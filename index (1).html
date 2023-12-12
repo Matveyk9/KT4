@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Adaptive</title>
+  </head>
+  <style>
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  header .logo {
+    margin-right: 10px;
+  }
+  
+  header .content {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  header div {
+    margin-right: 10px;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .title-block {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .col {
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    flex-basis: calc(33.33% - 20px);
+  }
+  
+  .col img {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .text-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.762);
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+  }
+  
+  @media (min-width: 200px) and (max-width: 600px) {
+    .col {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 990px) {
+    .col {
+      flex-basis: calc(50% - 20px);
+    }
+    .h1 {
+      text-align: center;
+      font-size: 35px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .col img {
+      height: 300px;
+    }
+    .h1 {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+ </style>>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <div class="content">
+        <div>Home</div>
+        <div>About</div>
+        <div>Contact</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="title-block">
+        <h1>We'll help manage your business</h1>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa
+        </p>
+      </div>
+      <div class="container">
+        <div class="col">
+          <p class="text-img">Мотицавия</p>
+          <img
+            src="https://kartinkof.club/uploads/posts/2022-06/1655497040_22-kartinkof-club-p-kartinki-motivatsiya-na-den-23.jpg"
+          />
+        </div>
+        <div class="col">
+          <p class="text-img">Занимайся арбитражем</p>
+          <img
+            src="https://pic.rutubelist.ru/video/35/68/35680d618fa6978033ef2aca771e1b4a.jpg"
+          />
+        </div>
+        <div class="col">
+          <p class="text-img">Сиди в Чайхоне</p>
+          <img
+            src="https://telegra.ph/file/1280533a740b042620c32.jpg"
+          />
+        </div>
+        <div class="col">
+          <p class="text-img">Купи BMW</p>
+          <img
+            src="https://sportishka.com/uploads/posts/2022-11/1667487209_3-sportishka-com-p-krutie-bmv-vkontakte-3.jpg"
+          />
+        </div>
+        <div class="col">
+          <p class="text-img">Смотри Спанчбоба</p>
+          <img
+            src="https://media.baamboozle.com/uploads/images/41367/1589135183_334684"
+          />
+        </div>
+        <div class="col">
+          <p class="text-img">Носи</p>
+          <img
+            src="https://sun9-75.userapi.com/impg/c858420/v858420109/11e488/mE9bJjhXFUs.jpg?size=1000x800&quality=96&sign=5814075701dcb4ae05b8d42f44a3f6e2&c_uniq_tag=QYQd8g0R-Hj23ZmjFZr5RQTcwsNoUkKnRHPG5SKrHOU&type=album"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
